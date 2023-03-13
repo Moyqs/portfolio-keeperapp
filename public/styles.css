@@ -8,6 +8,7 @@
 body {
     background-color: rgb(231, 231, 231);
     height: 500px;
+    width: 100vw;
 }
 
 /* Header */
@@ -64,7 +65,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.121);
     position: relative;
     bottom: 25px;
-    left: 200px;
+    right: 0;
 }
 
 /* Note */
@@ -75,6 +76,7 @@ body {
     display: inline-block;
     margin: 0.5% 1%;
 }
+
 
 .note-div h1 {
     padding: 2% 3%;
@@ -110,4 +112,24 @@ body {
     font-weight: 500;
     font-size: 24px;
     color: rgb(175, 175, 175);
+}
+
+@media only screen and (max-width: 1020px) {
+    .input-div {
+        width: 80%;
+    }
+
+    .note-div {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .input-div {
+        width: 90%;
+    }
+
+    .note-div {
+        width: 98%;
+    }
 }
